@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>
+            Borderspacing in HTML
+        </title>
+    </head>
+    <body>
+        <p style="border-spacing: 100px; color: red;">Borders spacing cannot be applied to the p element; It is specific to the table tag</p>
+
+        <table style="border-collapse: separate; width: 1000px; border-spacing: 100px 10px" border="1"> <!-- border-spacing: horizontal-spacing vertical-spacing -->
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td colspan="2">4</td>
+                <td rowspan="2">5</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>7</td>
+            </tr>
+        </table>
+    </body>
+</html>
