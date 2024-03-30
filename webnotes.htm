@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv=Content-Type content="text/html; charset=windows-1252">
 <meta name=Generator content="Microsoft Word 15 (filtered)">
-<title>Ted's WebAuthoring Notes</title>
+<title>Web authoring notes</title>
 <style>
 <!--
  /* Font Definitions */
@@ -83,8 +83,15 @@ p.MsoTitleCxSpLast, li.MsoTitleCxSpLast, div.MsoTitleCxSpLast
 	color:#444D26;
 	text-transform:uppercase;
 	letter-spacing:1.5pt;}
+em
+	{color:black;}
 code
 	{font-family:"Courier New";}
+pre
+	{mso-style-link:"HTML Preformatted Char";
+	margin:0cm;
+	font-size:10.0pt;
+	font-family:"Courier New";}
 p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
 	{margin-top:0cm;
 	margin-right:0cm;
@@ -134,6 +141,10 @@ span.TitleChar
 span.HeaderChar
 	{mso-style-name:"Header Char";
 	mso-style-link:Header;}
+span.HTMLPreformattedChar
+	{mso-style-name:"HTML Preformatted Char";
+	mso-style-link:"HTML Preformatted";
+	font-family:"Courier New";}
 .MsoChpDefault
 	{font-size:10.5pt;}
 .MsoPapDefault
@@ -175,6 +186,13 @@ div.WordSection4
 	padding:24.0pt 24.0pt 24.0pt 24.0pt;}
 div.WordSection5
 	{page:WordSection5;}
+@page WordSection6
+	{size:595.3pt 841.9pt;
+	margin:72.0pt 72.0pt 72.0pt 72.0pt;
+	border:double windowtext 1.5pt;
+	padding:24.0pt 24.0pt 24.0pt 24.0pt;}
+div.WordSection6
+	{page:WordSection6;}
  /* List Definitions */
  ol
 	{margin-bottom:0cm;}
@@ -786,7 +804,7 @@ lang=en-MW>-</span><code><span lang=en-MW style='font-size:10.0pt;line-height:
 
 <p class=MsoNormal><img width=313 height=142 src="webnotes_files/image021.png"
 align=left hspace=12><img width=313 height=135 src="webnotes_files/image022.png"
-align=left hspace=12><img width=271 height=17 src="webnotes_files/image023.png"
+align=right hspace=12><img width=271 height=17 src="webnotes_files/image023.png"
 align=left hspace=12><span lang=en-MW>Adding this changes the table from the
 left to the right</span></p>
 
@@ -811,76 +829,8 @@ clear=all style='page-break-before:always'>
 
 <div class=WordSection4>
 
-<p class=MsoNormal><span class=MsoIntenseEmphasis><span lang=en-MW>Combinators
-in CSS</span></span></p>
-
-<p class=MsoNormal><span lang=en-MW>In CSS, you can use the <b>descendent
-combinator</b>, represented by the ‘ ‘ (space) character, to select the
-descendant elements of a specifies ancestor element. <b>Note </b>that this is
-different from the <b>grouping/multiple selector</b> which groups elements that
-match selector to apply the same styles to them. </span></p>
-
-<p class=MsoNormal><span lang=en-MW><img width=601 height=206
-src="webnotes_files/image024.png"></span></p>
-
-<p class=MsoNormal><span lang=en-MW>The following are a general descriptions of
-CSS combinators: </span></p>
-
-<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
-lang=en-MW style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><strong><span lang=en-MW style='font-family:"Calibri",sans-serif'>Descendant
-combinator</span></strong><span lang=en-MW>: Selects all elements that are
-descendants of a specified ancestor. Selects all elements that are descendants
-of a specified ancestor element, regardless of how deeply nested they are.</span></p>
-
-<p class=MsoListParagraphCxSpMiddle><span lang=en-MW><img width=507 height=69
-src="webnotes_files/image025.png"></span><span lang=en-MW> </span></p>
-
-<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
-lang=en-MW style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><strong><span lang=en-MW style='font-family:"Calibri",sans-serif'>Child
-combinator</span></strong><span lang=en-MW>: Selects all direct children of the
-specified parent. It targets elements that are immediately nested within the
-parent, excluding any deeper descendants.</span></p>
-
-<p class=MsoListParagraphCxSpMiddle><span lang=en-MW><img width=507 height=67
-src="webnotes_files/image026.png"></span></p>
-
-<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
-lang=en-MW style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><strong><span lang=en-MW style='font-family:"Calibri",sans-serif'>Adjacent
-sibling combinator</span></strong><span lang=en-MW>: Selects an element that is
-directly preceded by a sibling element. The following rule selects the </span><code><span
-lang=en-MW style='font-size:10.0pt;line-height:125%'>adjacent</span></code><span
-lang=en-MW> element that immediately follows </span><code><span lang=en-MW
-style='font-size:10.0pt;line-height:125%'>element</span></code><span
-lang=en-MW>.</span></p>
-
-<p class=MsoListParagraphCxSpMiddle><span lang=en-MW><img width=507 height=66
-src="webnotes_files/image027.png"></span></p>
-
-<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
-lang=en-MW style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><strong><span lang=en-MW style='font-family:"Calibri",sans-serif'>General
-sibling combinator</span></strong><span lang=en-MW>: Selects all sibling
-elements that follow a specified element. It targets all elements that come
-after the specified element, not just the immediately following one unlike the <strong><span
-style='font-family:"Calibri",sans-serif'>Adjacent sibling combinator. </span></strong><strong><span
-style='font-family:"Calibri",sans-serif;font-weight:normal'>The following </span></strong>selects
-all </span><code><span lang=en-MW style='font-size:10.0pt;line-height:125%'>sibling</span></code><span
-lang=en-MW> elements that come after </span><code><span lang=en-MW
-style='font-size:10.0pt;line-height:125%'>element</span></code><span
-lang=en-MW> in the document structure.</span></p>
-
-<p class=MsoListParagraphCxSpMiddle><span lang=en-MW><img width=506 height=72
-src="webnotes_files/image028.png"></span></p>
-
-<p class=MsoListParagraphCxSpMiddle><span lang=en-MW>&nbsp;</span></p>
-
-<p class=MsoListParagraphCxSpMiddle><span lang=en-MW>&nbsp;</span></p>
-
-<p class=MsoListParagraphCxSpLast style='text-indent:-36.0pt'><span
-class=MsoIntenseEmphasis><span lang=en-MW>Text Alignment in Table cells </span></span></p>
+<p class=MsoNormal><span class=MsoIntenseEmphasis><span lang=en-MW>Text
+Alignment in Table cells </span></span></p>
 
 <p class=MsoNormal><span lang=en-MW>Text can be aligned in two ways –
 horizontally and vertically. </span></p>
@@ -912,7 +862,7 @@ lang=en-MW style='font-size:10.0pt;line-height:125%'>rowspan </span></code><span
 lang=en-MW>attribute. The result will be similar to the picture below.</span></p>
 
 <p class=MsoListParagraphCxSpMiddle><span lang=en-MW><img width=567 height=289
-src="webnotes_files/image029.png"></span></p>
+src="webnotes_files/image024.png"></span></p>
 
 <p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
 lang=en-MW style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -921,7 +871,7 @@ lang=en-MW style='font-size:10.0pt;line-height:125%'>colspan</span></code><span
 lang=en-MW> attribute. The result will be similar to the picture below.</span></p>
 
 <p class=MsoListParagraphCxSpMiddle><span lang=en-MW><img width=567 height=289
-src="webnotes_files/image030.png"></span></p>
+src="webnotes_files/image025.png"></span></p>
 
 <p class=MsoListParagraphCxSpLast style='text-indent:-36.0pt'><span
 class=MsoIntenseEmphasis><span lang=en-MW>Understanding Padding and
@@ -973,12 +923,12 @@ other. </span></p>
 lang=en-MW>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span></span><span lang=en-MW>For example, when styled for <b>padding </b>like
 this:<br>
-<img width=605 height=17 src="webnotes_files/image031.png"></span></p>
+<img width=605 height=17 src="webnotes_files/image026.png"></span></p>
 
 <p class=MsoNormal><span lang=en-MW>The result is: </span></p>
 
 <p class=MsoNormal><span lang=en-MW><img width=601 height=177
-src="webnotes_files/image032.png"></span></p>
+src="webnotes_files/image027.png"></span></p>
 
 <p class=MsoListParagraph style='margin-left:21.3pt;text-indent:-18.0pt'><span
 lang=en-MW>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -986,12 +936,12 @@ lang=en-MW>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
 this: </span></p>
 
 <p class=MsoNormal><span lang=en-MW><img width=605 height=18
-src="webnotes_files/image033.png"></span></p>
+src="webnotes_files/image028.png"></span></p>
 
 <p class=MsoNormal><span lang=en-MW>The result is: </span></p>
 
 <p class=MsoNormal><span lang=en-MW><img width=601 height=75
-src="webnotes_files/image034.png"></span></p>
+src="webnotes_files/image029.png"></span></p>
 
 <p class=MsoNormal><span class=MsoIntenseEmphasis><span lang=en-MW>Horizontal
 Rule and Line Break </span></span></p>
@@ -1004,7 +954,7 @@ It typically renders as a horizontal line or rule across the width of the
 containing element.</span></p>
 
 <p class=MsoNormal><span lang=en-MW><img width=605 height=99
-src="webnotes_files/image035.png"></span></p>
+src="webnotes_files/image030.png"></span></p>
 
 <p class=MsoNormal><span lang=en-MW> </span></p>
 
@@ -1024,7 +974,7 @@ lang=en-MW> It's useful for creating line breaks within paragraphs, addresses,
 or other text where you want to control the line breaks manually.</span></p>
 
 <p class=MsoNormal><span lang=en-MW><img width=605 height=48
-src="webnotes_files/image036.png"></span></p>
+src="webnotes_files/image031.png"></span></p>
 
 <p class=MsoNormal><span class=MsoIntenseEmphasis><span lang=en-MW>Graphics
 within HTML </span></span></p>
@@ -1097,8 +1047,8 @@ lang=en-MW>&gt; tag. </span></p>
 
 <p class=MsoNormal><span lang=en-MW>Example:</span></p>
 
-<p class=MsoNormal><span lang=en-MW><img width=605 height=259 id="Picture 1"
-src="webnotes_files/image037.png"></span></p>
+<p class=MsoNormal><span lang=en-MW><img width=605 height=259
+src="webnotes_files/image032.png"></span></p>
 
 <p class=MsoNormal><span lang=en-MW>&lt;</span><span lang=en-MW
 style='font-size:10.0pt;line-height:125%;font-family:"Courier New"'>img</span><span
@@ -1112,10 +1062,889 @@ line-height:125%;font-family:"Courier New"'>loop</span><span lang=en-MW> and </s
 lang=en-MW style='font-size:10.0pt;line-height:125%;font-family:"Courier New"'>muted</span><span
 lang=en-MW> attributes are especially useful. Additionally, <b><i>the </i></b></span><i><span
 lang=en-MW style='font-size:10.0pt;line-height:125%;font-family:"Courier New"'>autoplay</span><b><span
-lang=en-MW> attribute requires the </span></b></i><i><span lang=en-MW
-style='font-size:10.0pt;line-height:125%;font-family:"Courier New"'>muted</span><b><span
+lang=en-MW> <span class=MsoIntenseEmphasis>attribute</span> requires the </span></b></i><i><span
+lang=en-MW style='font-size:10.0pt;line-height:125%;font-family:"Courier New"'>muted</span><b><span
 lang=en-MW> attribute</span></b></i><span lang=en-MW> in most modern browsers
 to function as most users despise uncontrolled automatic audio playback. </span></p>
+
+<p class=MsoNormal><span lang=en-MW>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=en-MW>&nbsp;</span></p>
+
+<p class=MsoNormal><span class=MsoIntenseEmphasis><span lang=en-MW>Colours – A
+Brief Introduction </span></span></p>
+
+<p class=MsoNormal><span lang=en-MW>Colours can only be defined in CSS. And in
+CSS, colours are generally defined as hexadecimal. Hexadecimal is a base-16
+number system denoted by the characters 0 to F. In CSS, hexadecimal integers
+must be preceded by a hashtag (‘#’). </span></p>
+
+<p class=MsoNormal><span lang=en-MW>The general form of defining colours in CSS
+is as follows:</span></p>
+
+<p class=MsoNormal><span lang=en-MW><img width=601 height=42
+src="webnotes_files/image033.png"></span><span lang=en-MW> </span></p>
+
+<p class=MsoNormal><span lang=en-MW>Example: White in hex would be #</span><i><span
+lang=en-MW style='font-size:10.0pt;line-height:125%;font-family:"Courier New"'>FFFFFF</span></i></p>
+
+<p class=MsoNormal><b><span lang=en-MW>Note: </span></b><span lang=en-MW>In
+CSS, the background colour property can be used to shade cells (&lt;</span><i><span
+lang=en-MW style='font-size:10.0pt;line-height:125%;font-family:"Courier New"'>td</span></i><span
+lang=en-MW>&gt;, &lt;</span><i><span lang=en-MW style='font-size:10.0pt;
+line-height:125%;font-family:"Courier New"'>th</span></i><span lang=en-MW>&gt;),
+table rows (&lt;</span><i><span lang=en-MW style='font-size:10.0pt;line-height:
+125%;font-family:"Courier New"'>tr</span></i><span lang=en-MW>&gt;), table
+sections (&lt;</span><i><span lang=en-MW style='font-size:10.0pt;line-height:
+125%;font-family:"Courier New"'>thead</span></i><span lang=en-MW>&gt;, &lt;</span><i><span
+lang=en-MW style='font-size:10.0pt;line-height:125%;font-family:"Courier New"'>tfoot</span></i><span
+lang=en-MW>&gt;, &lt;</span><i><span lang=en-MW style='font-size:10.0pt;
+line-height:125%;font-family:"Courier New"'>tbody</span></i><span lang=en-MW>&gt;),
+and the entire body section (&lt;</span><i><span lang=en-MW style='font-size:
+10.0pt;line-height:125%;font-family:"Courier New"'>body</span></i><span
+lang=en-MW>&gt;) of the web page itself!</span></p>
+
+<p class=MsoNormal><span class=MsoIntenseEmphasis><span lang=en-MW>Lists a
+summary </span></span></p>
+
+<p class=MsoNormal><span lang=en-MW>Lists in HTML can be ordered using the &lt;</span><i><span
+lang=en-MW style='font-size:10.0pt;line-height:125%;font-family:"Courier New"'>ol</span></i><span
+lang=en-MW>&gt; tag, or unordered using the &lt;</span><i><span lang=en-MW
+style='font-size:10.0pt;line-height:125%;font-family:"Courier New"'>ul</span></i><span
+lang=en-MW>&gt; tag.  Each item in a list must be enclosed within the list item
+&lt;</span><i><span lang=en-MW style='font-size:10.0pt;line-height:125%;
+font-family:"Courier New"'>li</span></i><span lang=en-MW>&gt; tag in order to
+inherit its respective styling, which is <b>numbers </b>for ordered lists, and <b>bullets</b>
+for unordered lists. If items within the &lt;</span><i><span lang=en-MW
+style='font-size:10.0pt;line-height:125%;font-family:"Courier New"'>ol</span></i><span
+lang=en-MW>&gt; or &lt;</span><i><span lang=en-MW style='font-size:10.0pt;
+line-height:125%;font-family:"Courier New"'>ul</span></i><span lang=en-MW>&gt;
+tags are not placed within &lt;</span><i><span lang=en-MW style='font-size:
+10.0pt;line-height:125%;font-family:"Courier New"'>li</span></i><span
+lang=en-MW>&gt; tag, they will still be indented appropriately. However, they
+won’t be styled.</span></p>
+
+<p class=MsoNormal><b><span lang=en-MW>Hyperlinks in Detail</span></b></p>
+
+<p class=MsoNormal><span lang=en-MW>Hyperlinks in HTML is achieved by using the
+anchor &lt;a&gt; tags along with the hyperlink reference (</span><i><span
+lang=en-MW style='font-size:10.0pt;line-height:125%;font-family:"Courier New"'>href</span></i><span
+lang=en-MW>) attributes. You can use text and images for hyperlinks. </span></p>
+
+<p class=MsoNormal><span lang=en-MW>The hyperlink reference attribute can also
+be used for emails. The following properties can be used in the hyperlink
+reference string: </span></p>
+
+<ol start=1 type=1>
+ <li class=MsoNormal style='line-height:normal'><span class=MsoIntenseEmphasis><span
+     lang=en-MW>URL Scheme (mailto):</span></span></li>
+</ol>
+
+<p class=MsoListParagraph style='margin-left:72.0pt;text-indent:-18.0pt'><em><span
+lang=en-MW style='font-family:"Courier New";font-style:normal'>o<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span></em><em><span
+lang=en-MW>This specifies that the link is intended to open the user's default
+email client to send an email.</span></em></p>
+
+<ol start=2 type=1>
+ <li class=MsoNormal style='line-height:normal'><span class=MsoIntenseEmphasis><span
+     lang=en-MW>Query Properties:</span></span></li>
+</ol>
+
+<p class=MsoListParagraphCxSpFirst style='margin-left:72.0pt;text-indent:-18.0pt'><span
+lang=en-MW style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span lang=en-MW style='font-size:10.0pt;line-height:125%;
+font-family:"Courier New"'>to</span><span lang=en-MW> (Required): Specifies the
+recipient's email address. Multiple recipients can be separated by commas.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:72.0pt;text-indent:-18.0pt'><span
+lang=en-MW style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span lang=en-MW style='font-size:10.0pt;line-height:125%;
+font-family:"Courier New"'>cc</span><span lang=en-MW> (Optional): Specifies the
+email addresses of recipients who will receive a copy (carbon copy) of the
+email. Multiple recipients can be separated by commas.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:72.0pt;text-indent:-18.0pt'><span
+lang=en-MW style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span lang=en-MW style='font-size:10.0pt;line-height:125%;
+font-family:"Courier New"'>bcc</span><span lang=en-MW> (Optional): Specifies
+the email addresses of recipients who will receive a blind carbon copy of the
+email (i.e., their addresses are not visible to other recipients). Multiple
+recipients can be separated by commas.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:72.0pt;text-indent:-18.0pt'><span
+lang=en-MW style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span lang=en-MW style='font-size:10.0pt;line-height:125%;
+font-family:"Courier New"'>subject</span><span lang=en-MW> (Optional):
+Specifies the subject of the email.</span></p>
+
+<p class=MsoListParagraphCxSpLast style='margin-left:72.0pt;text-indent:-18.0pt'><span
+lang=en-MW style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span lang=en-MW style='font-size:10.0pt;line-height:125%;
+font-family:"Courier New"'>body</span><span lang=en-MW> (Optional): Specifies
+the body of the email.</span></p>
+
+<ol start=3 type=1>
+ <li class=MsoNormal style='line-height:normal'><span class=MsoIntenseEmphasis><span
+     lang=en-MW>Special Characters:</span></span></li>
+</ol>
+
+<p class=MsoListParagraphCxSpFirst style='margin-left:72.0pt;text-indent:-18.0pt'><span
+lang=en-MW style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span lang=en-MW style='font-size:10.0pt;line-height:125%;
+font-family:"Courier New"'>%20</span><span lang=en-MW>: Represents a space
+character in URLs.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:72.0pt;text-indent:-18.0pt'><span
+lang=en-MW style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span lang=en-MW style='font-size:10.0pt;line-height:125%;
+font-family:"Courier New"'>&amp;</span><span lang=en-MW>: Separates different
+query parameters.</span></p>
+
+<p class=MsoListParagraphCxSpLast style='margin-left:72.0pt;text-indent:-18.0pt'><span
+lang=en-MW style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span lang=en-MW style='font-size:10.0pt;line-height:125%;
+font-family:"Courier New"'>?</span><span lang=en-MW>: Indicates the beginning
+of the query string.</span><span lang=en-MW> A query string is a part of a URL
+that is used to pass data to web applications via parameters. These parameters
+are in the form of key-value pairs and are separated by '&amp;' symbols.</span></p>
+
+<pre><span class=MsoIntenseEmphasis><span lang=en-MW>Example: </span></span></pre>
+
+<p class=MsoNormal><span lang=en-MW style='font-size:10.0pt;line-height:125%;
+font-family:"Courier New"'>&lt;a href=&quot;mailto:recipient@example.com?cc=cc1@example.com,cc2@example.com&amp;bcc=bcc@example.com&amp;subject=Subject%20Line&amp;body=Hello%20World&quot;&gt;Send
+Email&lt;/a&gt;</span></p>
+
+<p class=MsoNormal><span class=MsoIntenseEmphasis><span lang=en-MW>Target Windows</span></span></p>
+
+<p class=MsoNormal><span lang=en-MW>Target windows to open hyperlinks can be set
+in the base </span><span lang=en-MW style='font-size:10.0pt;line-height:125%;
+font-family:"Courier New"'>(&lt;base&gt;) </span><span lang=en-MW>tag or anchor
+</span><span lang=en-MW style='font-size:10.0pt;line-height:125%;font-family:
+"Courier New"'>(&lt;a&gt;) </span><span lang=en-MW>tag using the </span><span
+lang=en-MW style='font-size:10.0pt;line-height:125%;font-family:"Courier New"'>target</span><span
+lang=en-MW> attribute. </span></p>
+
+<p class=MsoNormal><span lang=en-MW>The following are the most common values
+for the target attribute: </span></p>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+lang=en-MW style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=en-MW style='font-size:10.0pt;line-height:125%;
+font-family:"Courier New"'>_blank</span><span lang=en-MW>: Open the hyperlink
+in a new window</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=en-MW style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=en-MW style='font-size:10.0pt;line-height:125%;
+font-family:"Courier New"'>_self</span><span lang=en-MW>: Open the hyperlink in
+the current window</span></p>
+
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span lang=en-MW
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=en-MW>Additionally, any string can be succeeded by the
+underscore character and be used as a value for the target attribute. In this
+case, the browser will check if a window by the specified string exists, if it
+does it opens the link there, otherwise, the browser creates the window and
+opens the link in there.  </span></p>
+
+<p class=MsoNormal><span class=MsoIntenseEmphasis><span lang=en-MW>Background
+Colour </span></span></p>
+
+<p class=MsoNormal><span lang=en-MW>In HTML, the </span><span lang=en-MW
+style='font-size:10.0pt;line-height:125%;font-family:"Courier New"'>background</span><span
+lang=en-MW>-</span><span lang=en-MW style='font-size:10.0pt;line-height:125%;
+font-family:"Courier New"'>color</span><span lang=en-MW> property (which is a
+CSS property) can be applied to the body of the webpage (&lt;</span><span
+lang=en-MW style='font-size:10.0pt;line-height:125%;font-family:"Courier New"'>body</span><span
+lang=en-MW>&gt;), entire tables (&lt;</span><span lang=en-MW style='font-size:
+10.0pt;line-height:125%;font-family:"Courier New"'>table</span><span
+lang=en-MW>&gt;), table sections (&lt;</span><span lang=en-MW style='font-size:
+10.0pt;line-height:125%;font-family:"Courier New"'>thead</span><span
+lang=en-MW>&gt;, &lt;</span><span lang=en-MW style='font-size:10.0pt;
+line-height:125%;font-family:"Courier New"'>tfoot</span><span lang=en-MW>&gt;,
+&lt;</span><span lang=en-MW style='font-size:10.0pt;line-height:125%;
+font-family:"Courier New"'>tbody</span><span lang=en-MW>&gt;), table rows (&lt;</span><span
+lang=en-MW style='font-size:10.0pt;line-height:125%;font-family:"Courier New"'>tr</span><span
+lang=en-MW>&gt;), and individual table cells (&lt;</span><span lang=en-MW
+style='font-size:10.0pt;line-height:125%;font-family:"Courier New"'>td</span><span
+lang=en-MW>&gt; and &lt;</span><span lang=en-MW style='font-size:10.0pt;
+line-height:125%;font-family:"Courier New"'>th</span><span lang=en-MW>&gt;). </span></p>
+
+<p class=MsoNormal><b><span lang=en-MW>Note: </span></b><span lang=en-MW>If any
+section in a table i.e table header, table footer or table body contains only
+one table row. Then, applying the </span><span lang=en-MW style='font-size:
+10.0pt;line-height:125%;font-family:"Courier New"'>background</span><span
+lang=en-MW>-</span><span lang=en-MW style='font-size:10.0pt;line-height:125%;
+font-family:"Courier New"'>color</span><span lang=en-MW> property to the table
+section is equivalent to applying it to the only table row within the section. 
+</span></p>
+
+<p class=MsoNormal><span class=MsoIntenseEmphasis><span lang=en-MW>Background
+Images </span></span></p>
+
+<p class=MsoNormal><span lang=en-MW>The </span><span lang=en-MW
+style='font-size:10.0pt;line-height:125%;font-family:"Courier New"'>background-image</span><span
+lang=en-MW> CSS property can be applied to the body section of the webpage. In
+modern browsers, more than one image can be applied as background at an
+instance for a webpage. The background-image property can be applied to a other
+styles than just the body.  </span></p>
+
+<p class=MsoNormal><span lang=en-MW>The following CSS properties can be used to
+provide additional information on how to present the background: </span></p>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+lang=en-MW style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=en-MW style='font-size:10.0pt;line-height:125%;
+font-family:"Courier New"'>background</span><span lang=en-MW>-</span><span
+lang=en-MW style='font-size:10.0pt;line-height:125%;font-family:"Courier New"'>image</span><span
+lang=en-MW>: Takes the image as returned by the </span><span lang=en-MW
+style='font-size:10.0pt;line-height:125%;font-family:"Courier New"'>url()</span><span
+lang=en-MW> function.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=en-MW style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=en-MW style='font-size:10.0pt;line-height:125%;
+font-family:"Courier New"'>background</span><b><span lang=en-MW>-</span></b><span
+lang=en-MW style='font-size:10.0pt;line-height:125%;font-family:"Courier New"'>size</span><b><span
+lang=en-MW>: </span></b><span lang=en-MW>The </span><span lang=en-MW
+style='font-size:10.0pt;line-height:125%;font-family:"Courier New"'>width</span><b><span
+lang=en-MW> </span></b><span lang=en-MW>and </span><span lang=en-MW
+style='font-size:10.0pt;line-height:125%;font-family:"Courier New"'>height</span><b><span
+lang=en-MW> </span></b><span lang=en-MW>properties do not affect the dimensions
+of a background image. Thus, this property must be used in order to resize a
+background image.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=en-MW style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=en-MW style='font-size:10.0pt;line-height:125%;
+font-family:"Courier New"'>background-repeat</span><span lang=en-MW>: Allows
+the image to be displayed only once (</span><span lang=en-MW style='font-size:
+10.0pt;line-height:125%;font-family:"Courier New"'>no</span><span lang=en-MW>-</span><span
+lang=en-MW style='font-size:10.0pt;line-height:125%;font-family:"Courier New"'>repeat</span><span
+lang=en-MW>), or repeated (</span><span lang=en-MW style='font-size:10.0pt;
+line-height:125%;font-family:"Courier New"'>repeat</span><span lang=en-MW>) for
+a specified number of times as defined by</span><span lang=en-MW
+style='font-size:10.0pt;line-height:125%;font-family:"Courier New"'> repeat-x</span><span
+lang=en-MW> and </span><span lang=en-MW style='font-size:10.0pt;line-height:
+125%;font-family:"Courier New"'>repeat-y</span><span lang=en-MW>.  </span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=en-MW style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=en-MW style='font-size:10.0pt;line-height:125%;
+font-family:"Courier New"'>background-attachment</span><span lang=en-MW>: The </span><code><span
+lang=en-MW style='font-size:10.0pt;line-height:125%'>background-attachment</span></code><span
+lang=en-MW> property in CSS specifies whether a background image should scroll
+with the rest of the page's content or remain fixed in place as the page is
+scrolled. It can take one of the following values:</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:72.0pt;text-indent:-18.0pt'><span
+lang=en-MW style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><code><span lang=en-MW style='font-size:10.0pt;line-height:125%'>scroll</span></code><span
+lang=en-MW>: This is the default value. It means that the background image will
+scroll along with the content of the element.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:72.0pt;text-indent:-18.0pt'><span
+lang=en-MW style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><code><span lang=en-MW style='font-size:10.0pt;line-height:125%'>fixed</span></code><span
+lang=en-MW>: With this value, the background image will remain fixed in place
+relative to the viewport. This means that as the user scrolls the page, the
+background image will stay in the same position.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:72.0pt;text-indent:-18.0pt'><span
+lang=en-MW style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><code><span lang=en-MW style='font-size:10.0pt;line-height:125%'>local</span></code><span
+lang=en-MW>: This value is less commonly used and it's not widely supported. It
+means that the background image will scroll along with the content of the
+element, but not the entire page.</span></p>
+
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span lang=en-MW
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=en-MW style='font-size:10.0pt;line-height:125%;
+font-family:"Courier New"'>background-position</span><span lang=en-MW>: The </span><code><span
+lang=en-MW style='font-size:10.0pt;line-height:125%'>background-position</span></code><span
+lang=en-MW> property in CSS allows you to specify the starting position of a
+background image within its containing element. It determines where the
+background image will be placed relative to the top-left corner of the element.
+The position of the image can be provided by the default keywords, pixel
+values, or percentage values. Additionally, more than one value can be provided
+to the property to provide both the horizontal and vertical positions
+separately. </span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt'><span lang=en-MW>Example: <br>
+<img width=602 height=335 src="webnotes_files/image034.png"></span></p>
+
+<p class=MsoNormal><b><span lang=en-MW>Fonts Sizes</span></b></p>
+
+<p class=MsoNormal><span lang=en-MW>Font sizes can be defined in CSS as <b>absolute
+</b>or <b>relative </b>values. </span></p>
+
+<p class=MsoNormal><b><span lang=en-MW>Absolute Values: </span></b><span
+lang=en-MW>Font sizes in CSS can be defined in the following absolute value
+measurements:</span></p>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+lang=en-MW style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span lang=en-MW>Centimetre </span></b><span lang=en-MW
+style='font-size:10.0pt;line-height:125%;font-family:"Courier New"'>(cm) </span><b><span
+lang=en-MW>and Millimetre </span></b><span lang=en-MW style='font-size:10.0pt;
+line-height:125%;font-family:"Courier New"'>(mm)</span><b><span lang=en-MW>: </span></b><span
+lang=en-MW>Font sizes can be defined in centimetres and millimetres. </span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=en-MW style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span lang=en-MW>Inch </span></b><span lang=en-MW
+style='font-size:10.0pt;line-height:125%;font-family:"Courier New"'>(in)</span><b><span
+lang=en-MW>:</span></b><span lang=en-MW> Used to defines the font sizes in
+inch. One inch is approximately 2.54cm. </span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=en-MW style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span lang=en-MW>Points </span></b><span lang=en-MW
+style='font-size:10.0pt;line-height:125%;font-family:"Courier New"'>(pt)</span><b><span
+lang=en-MW>: </span></b><span lang=en-MW>Used to define font sizes in points.
+There are 72 points to an inch. </span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=en-MW style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span lang=en-MW>Picas </span></b><span lang=en-MW
+style='font-size:10.0pt;line-height:125%;font-family:"Courier New"'>(pc)</span><b><span
+lang=en-MW>:</span></b><span lang=en-MW> Font sizes can be defined in picas.
+One pica is about 12 points.  </span></p>
+
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span lang=en-MW
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span lang=en-MW>Pixels </span></b><span lang=en-MW
+style='font-size:10.0pt;line-height:125%;font-family:"Courier New"'>(px)</span><b><span
+lang=en-MW>: </span></b><span lang=en-MW>This is the only measurement whose
+apparent size is entirely dependent on the ratio of pixel densities of
+different monitors. Thus, they may look different on every monitor.</span></p>
+
+<p class=MsoNormal><b><span lang=en-MW>Relative Values: </span></b><span
+lang=en-MW>Font sizes in CSS can also be defined as relative values (sometimes
+to the size of a previously specified absolute size). </span></p>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+lang=en-MW style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span lang=en-MW>em: </span></b><span lang=en-MW>In CSS, the </span><code><span
+lang=en-MW style='font-size:10.0pt;line-height:125%'>em</span></code><span
+lang=en-MW> unit is a relative unit of measurement that is based on the
+computed value of the font size of an element's parent. Specifically, it
+represents the calculated font size of the element itself. The </span><code><span
+lang=en-MW style='font-size:10.0pt;line-height:125%'>em</span></code><span
+lang=en-MW> unit is commonly used for setting sizes of various elements in a
+layout, such as margins, padding, widths, heights, and font sizes. </span></p>
+
+<p class=MsoListParagraphCxSpMiddle><span lang=en-MW>When you specify a size
+using </span><code><span lang=en-MW style='font-size:10.0pt;line-height:125%'>em</span></code><span
+lang=en-MW>, it's relative to the font size of the element's nearest parent
+element that has a defined font size. If no parent element has a specified font
+size, the </span><code><span lang=en-MW style='font-size:10.0pt;line-height:
+125%'>em</span></code><span lang=en-MW> unit will be relative to the default
+font size of the browser, which is typically 16 pixels.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle><span lang=en-MW>For example, if the font
+size of a paragraph (</span><code><span lang=en-MW style='font-size:10.0pt;
+line-height:125%'>&lt;p&gt;</span></code><span lang=en-MW>) element is set to </span><code><span
+lang=en-MW style='font-size:10.0pt;line-height:125%'>1.2em</span></code><span
+lang=en-MW>, it means the font size will be 1.2 times the font size of its
+parent element. If the parent element's font size is 16 pixels, the paragraph's
+font size will be 19.2 pixels (1.2 * 16 = 19.2 pixels).</span></p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt;
+margin-left:36.0pt;margin-right:0cm'>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:0cm;border:none;
+padding:0cm'><b><span lang=en-MW>Note: </span></b><span lang=en-MW>A<b> parent</b>
+element, is an element that has other elements nested within it. The elements
+that are nested one level deeper from the parent is called a <b>child. </b>The
+elements that are nested any level deeper from the parents called <b>descendents.</b></span></p>
+
+</div>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=en-MW style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span lang=en-MW>ex: </span></b><span lang=en-MW>In CSS, the </span><code><span
+lang=en-MW style='font-size:10.0pt;line-height:125%'>ex</span></code><span
+lang=en-MW>-unit is a relative unit of measurement that represents the height
+of the lowercase letter 'x' in the <b><i>current font</i></b>. It's primarily
+used for setting sizes relative to the font's x-height, which is the height of
+lowercase letters in a font. The x-height can vary between different fonts, but
+using </span><code><span lang=en-MW style='font-size:10.0pt;line-height:125%'>ex</span></code><span
+lang=en-MW> as a unit ensures that the size remains proportional to the font's
+design. For example, if you set the height of an element to </span><code><span
+lang=en-MW style='font-size:10.0pt;line-height:125%'>2ex</span></code><span
+lang=en-MW>, it will be twice the height of the lowercase 'x' in the current
+font.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle><span lang=en-MW>In the context of ex
+measurement, the <b><i>current font</i></b>, is the font that is applied to the
+element where you're using the </span><code><span lang=en-MW style='font-size:
+10.0pt;line-height:125%'>ex</span></code><span lang=en-MW> unit. The </span><code><span
+lang=en-MW style='font-size:10.0pt;line-height:125%'>ex</span></code><span
+lang=en-MW> unit measures the height of the lowercase letter 'x' in the font
+currently applied to that element. This font size is inherited from the parent
+element unless explicitly overridden.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle><span lang=en-MW>So, if you have an element
+with a font size specified in </span><code><span lang=en-MW style='font-size:
+10.0pt;line-height:125%'>ex</span></code><span lang=en-MW>, it will be relative
+to the font size of its parent element. If the parent element also has a font
+size specified in </span><code><span lang=en-MW style='font-size:10.0pt;
+line-height:125%'>ex</span></code><span lang=en-MW>, then the size will be
+relative to the font size of its parent element, and so on, following the chain
+of parent elements up to the root of the document.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle><span lang=en-MW>In other words, unlike
+most measurements, the ex-measurement is relative to the size of the letter ‘x’
+in the current font-family, and is not relative to any other absolute font
+size. </span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=en-MW style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span lang=en-MW>Percentages: </span></b><span lang=en-MW>When
+percentage values are used for font sizes in CSS, they are relative to the font
+size of the parent element, not the containing block. </span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=en-MW style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span lang=en-MW>larger and smaller: </span></b><span
+lang=en-MW>In CSS, the keywords </span><code><span lang=en-MW style='font-size:
+10.0pt;line-height:125%'>larger</span></code><span lang=en-MW> and </span><code><span
+lang=en-MW style='font-size:10.0pt;line-height:125%'>smaller</span></code><span
+lang=en-MW> are used to set font sizes relative to the font size of the parent
+element. These keywords can be used as values for the </span><code><span
+lang=en-MW style='font-size:10.0pt;line-height:125%'>font-size</span></code><span
+lang=en-MW> property.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle><span lang=en-MW>When you set the font size
+of an element to </span><code><span lang=en-MW style='font-size:10.0pt;
+line-height:125%'>larger</span></code><span lang=en-MW>, it increases the font
+size relative to the font size of its parent element. Conversely, when you set
+the font size to </span><code><span lang=en-MW style='font-size:10.0pt;
+line-height:125%'>smaller</span></code><span lang=en-MW>, it decreases the font
+size relative to the font size of the parent element.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=en-MW style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span lang=en-MW>xx-small to xx-large</span></b><span
+lang=en-MW>: In CSS, the xx-small to xx-large keywords are used to specify font
+sizes relative to the browser's default font size. These keywords provide a way
+to set font sizes at different levels of scale, from very small to very large,
+without needing to specify exact pixel or percentage values.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:54.0pt'><span
+lang=en-MW>Here's an overview of each of these keywords:</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:72.0pt;text-indent:-18.0pt'><span
+lang=en-MW style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><code><span lang=en-MW style='font-size:10.0pt;line-height:125%'>xx-small</span></code><span
+lang=en-MW>: This sets the font size to the smallest available size. It's
+typically smaller than the browser's default font size.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:72.0pt;text-indent:-18.0pt'><span
+lang=en-MW style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><code><span lang=en-MW style='font-size:10.0pt;line-height:125%'>x-small</span></code><span
+lang=en-MW>: This sets the font size to a size slightly larger than xx-small.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:72.0pt;text-indent:-18.0pt'><span
+lang=en-MW style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><code><span lang=en-MW style='font-size:10.0pt;line-height:125%'>small</span></code><span
+lang=en-MW>: This sets the font size to a size slightly larger than x-small.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:72.0pt;text-indent:-18.0pt'><span
+lang=en-MW style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><code><span lang=en-MW style='font-size:10.0pt;line-height:125%'>medium</span></code><span
+lang=en-MW>: This sets the font size to the browser's default font size.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:72.0pt;text-indent:-18.0pt'><span
+lang=en-MW style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><code><span lang=en-MW style='font-size:10.0pt;line-height:125%'>large</span></code><span
+lang=en-MW>: This sets the font size to a size slightly larger than medium.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:72.0pt;text-indent:-18.0pt'><span
+lang=en-MW style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><code><span lang=en-MW style='font-size:10.0pt;line-height:125%'>x-large</span></code><span
+lang=en-MW>: This sets the font size to a size slightly larger than large.</span></p>
+
+<p class=MsoListParagraphCxSpLast style='margin-left:72.0pt;text-indent:-18.0pt'><span
+lang=en-MW style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><code><span lang=en-MW style='font-size:10.0pt;line-height:125%'>xx-large</span></code><span
+lang=en-MW>: This sets the font size to the largest available size. It's
+typically larger than the browser's default font size.</span></p>
+
+<p class=MsoNormal><span class=MsoIntenseEmphasis><span lang=en-MW>CSS
+Properties for text</span></span></p>
+
+<p class=MsoNormal><span lang=en-MW>The following are CSS properties that can
+be applied to text such as </span><span lang=en-MW style='font-size:10.0pt;
+line-height:125%;font-family:"Courier New"'>&lt;p&gt; </span><span lang=en-MW>and
+</span><span lang=en-MW style='font-size:10.0pt;line-height:125%;font-family:
+"Courier New"'>&lt;h1&gt; ... &lt;h6&gt;. </span><span lang=en-MW>They have
+been grouped below for convenience.</span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b><span lang=en-MW>The
+font properties</span></b></p>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+lang=en-MW style='font-size:10.0pt;line-height:125%;font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+lang=en-MW style='font-size:10.0pt;line-height:125%;font-family:"Courier New"'>font-family</span><span
+lang=en-MW>: Defines the font family to use. </span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=en-MW style='font-size:10.0pt;line-height:125%;font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+lang=en-MW style='font-size:10.0pt;line-height:125%;font-family:"Courier New"'>font-size</span><span
+lang=en-MW>: Defines the size of a text using absolute or relative measurements.
+</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=en-MW style='font-size:10.0pt;line-height:125%;font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+lang=en-MW style='font-size:10.0pt;line-height:125%;font-family:"Courier New"'>font-weight</span><span
+lang=en-MW>: Defines the extent to embolden a text. </span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=en-MW style='font-size:10.0pt;line-height:125%;font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+lang=en-MW style='font-size:10.0pt;line-height:125%;font-family:"Courier New"'>font-style</span><span
+lang=en-MW>: Defines how the text will be italicized.</span></p>
+
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span lang=en-MW
+style='font-size:10.0pt;line-height:125%;font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+lang=en-MW style='font-size:10.0pt;line-height:125%;font-family:"Courier New"'>font-variation</span><span
+lang=en-MW>: Can be used to display text in small capitals, where lowercase
+letters are replaced with smaller uppercase letters</span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b><span lang=en-MW>The
+text properties</span></b></p>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+lang=en-MW style='font-size:10.0pt;line-height:125%;font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+lang=en-MW style='font-size:10.0pt;line-height:125%;font-family:"Courier New"'>text-align</span><span
+lang=en-MW>: Defines the horizontal alignment of a text </span></p>
+
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span lang=en-MW
+style='font-size:10.0pt;line-height:125%;font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+lang=en-MW style='font-size:10.0pt;line-height:125%;font-family:"Courier New"'>text-decoration</span><span
+lang=en-MW>: Defines if the text has to be underlined, overlined or struck-through.
+</span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b><span lang=en-MW>The
+colour properties</span></b></p>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+lang=en-MW style='font-size:10.0pt;line-height:125%;font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+lang=en-MW style='font-size:10.0pt;line-height:125%;font-family:"Courier New"'>color</span><span
+lang=en-MW>: Defines the font colour.  </span></p>
+
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span lang=en-MW
+style='font-size:10.0pt;line-height:125%;font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+lang=en-MW style='font-size:10.0pt;line-height:125%;font-family:"Courier New"'>background-color</span><span
+lang=en-MW>: Defines the shading of the text. </span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b><span lang=en-MW>The
+vertical property</span></b></p>
+
+<p class=MsoListParagraph style='text-indent:-18.0pt'><span lang=en-MW
+style='font-size:10.0pt;line-height:125%;font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+lang=en-MW style='font-size:10.0pt;line-height:125%;font-family:"Courier New"'>vertical-alignment</span><span
+lang=en-MW>: Defines how a text must be aligned vertically.  </span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt'><span lang=en-MW>Some text
+enhancements such as superscript and subscript can only be defined in the HTML.
+Others can such as emboldening and italicizing can be done both in HTML and
+CSS. </span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt'><b><span lang=en-MW>Note: </span></b><span
+lang=en-MW>The </span><code><span lang=en-MW style='font-size:10.0pt;
+line-height:125%'>inherit</span></code><span lang=en-MW> value for any CSS
+property instructs the browser to inherit the computed value of that property
+from its parent element. It means that the property will take on the same value
+as its parent element, effectively inheriting its styling. When you apply </span><code><span
+lang=en-MW style='font-size:10.0pt;line-height:125%'>inherit</span></code><span
+lang=en-MW> to a property, it overrides any value set directly on the element
+itself, causing it to adopt the value of the same property from its parent
+element.</span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;text-indent:-18.0pt'><span
+class=MsoIntenseEmphasis><span lang=en-MW>Attribute Selectors in CSS</span></span></p>
+
+<p class=MsoNormal><span lang=en-MW>You can select elements based on their
+attributes using attribute selectors in CSS. Attribute selectors allow you to
+target elements based on the presence or value of HTML attributes.</span></p>
+
+<p class=MsoNormal><span lang=en-MW>There are several types of attribute
+selectors:</span></p>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><code><span
+lang=en-MW style='font-size:10.0pt;line-height:125%;font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></code><strong><span
+lang=en-MW style='font-family:"Calibri",sans-serif'>Exact Attribute Selector</span></strong><span
+lang=en-MW>: Selects elements that have a specified attribute with a specific
+value. It uses the syntax </span><code><span lang=en-MW style='font-size:10.0pt;
+line-height:125%'>[attribute=value]</span></code></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><code><span
+lang=en-MW style='font-size:10.0pt;line-height:125%;font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></code><strong><span
+lang=en-MW style='font-family:"Calibri",sans-serif'>Substring Attribute
+Selector</span></strong><span lang=en-MW>: Selects elements that have a
+specified attribute with a value containing a specific substring. It uses the
+syntax </span><code><span lang=en-MW style='font-size:10.0pt;line-height:125%'>[attribute*=value]</span></code></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><code><span
+lang=en-MW style='font-size:10.0pt;line-height:125%;font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></code><strong><span
+lang=en-MW style='font-family:"Calibri",sans-serif'>Prefix Attribute Selector</span></strong><span
+lang=en-MW>: Selects elements that have a specified attribute with a value
+starting with a specific string. It uses the syntax </span><code><span
+lang=en-MW style='font-size:10.0pt;line-height:125%'>[attribute^=value]</span></code></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><code><span
+lang=en-MW style='font-size:10.0pt;line-height:125%;font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></code><strong><span
+lang=en-MW style='font-family:"Calibri",sans-serif'>Suffix Attribute Selector</span></strong><span
+lang=en-MW>: Selects elements that have a specified attribute with a value
+ending with a specific string. It uses the syntax </span><code><span
+lang=en-MW style='font-size:10.0pt;line-height:125%'>[attribute$=value]</span></code></p>
+
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span lang=en-MW
+style='font-size:10.0pt;line-height:125%;font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><strong><span
+lang=en-MW style='font-family:"Calibri",sans-serif'>Exact Attribute Selector
+with Case Insensitivity</span></strong><span lang=en-MW>: Selects elements that
+have a specified attribute with a value matching a specified string, regardless
+of case. It uses the syntax </span><code><span lang=en-MW style='font-size:
+10.0pt;line-height:125%'>[attribute=value i]</span></code><span lang=en-MW>.</span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt'><strong><span lang=en-MW
+style='font-family:"Calibri",sans-serif'>Attribute selectors </span></strong><strong><span
+lang=en-MW style='font-family:"Calibri",sans-serif;font-weight:normal'>can be
+preceded by </span></strong><strong><span lang=en-MW style='font-family:"Calibri",sans-serif'>element
+selectors </span></strong><strong><span lang=en-MW style='font-family:"Calibri",sans-serif;
+font-weight:normal'>to select elements that meet the condition defined by the
+attribute selector. </span></strong></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;text-indent:-18.0pt'><span
+class=MsoIntenseEmphasis><span lang=en-MW>Pseudo-classes in CSS</span></span></p>
+
+<p class=MsoNormal><span lang=en-MW>In CSS, a pseudo-class is a keyword added
+to a selector that specifies a special state or condition of the selected
+elements. Pseudo-classes allow you to style elements based on factors other
+than their name or attributes. </span><span lang=en-MW>In CSS, when you use a
+space between a selector and a colon (</span><code><span lang=en-MW
+style='font-size:10.0pt;line-height:125%'>:</span></code><span lang=en-MW>), it
+indicates that you are targeting a pseudo-class of the elements matched by the
+selector.</span></p>
+
+<p class=MsoNormal><span lang=en-MW>Some common pseudo-classes include:</span></p>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+lang=en-MW style='font-size:10.0pt;line-height:125%;font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+lang=en-MW style='font-size:10.0pt;line-height:125%;font-family:"Courier New"'>:hover</span><span
+lang=en-MW>: Styles an element when it's being hovered over by the mouse
+cursor.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=en-MW style='font-size:10.0pt;line-height:125%;font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+lang=en-MW style='font-size:10.0pt;line-height:125%;font-family:"Courier New"'>:active</span><span
+lang=en-MW>: Styles an element when it's being activated, typically when it's
+being clicked on.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=en-MW style='font-size:10.0pt;line-height:125%;font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+lang=en-MW style='font-size:10.0pt;line-height:125%;font-family:"Courier New"'>:focus</span><span
+lang=en-MW>: Styles an element when it has received focus, such as when it's
+selected by tabbing through form elements.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=en-MW style='font-size:10.0pt;line-height:125%;font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+lang=en-MW style='font-size:10.0pt;line-height:125%;font-family:"Courier New"'>:visited</span><span
+lang=en-MW>: Styles links that have been visited by the user.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=en-MW style='font-size:10.0pt;line-height:125%;font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+lang=en-MW style='font-size:10.0pt;line-height:125%;font-family:"Courier New"'>:first-child</span><span
+lang=en-MW>: Styles an element if it's the first child of its parent element.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=en-MW style='font-size:10.0pt;line-height:125%;font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+lang=en-MW style='font-size:10.0pt;line-height:125%;font-family:"Courier New"'>:last-child</span><span
+lang=en-MW>: Styles an element if it's the last child of its parent element.</span></p>
+
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span lang=en-MW
+style='font-size:10.0pt;line-height:125%;font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+lang=en-MW style='font-size:10.0pt;line-height:125%;font-family:"Courier New"'>:nth-child(n)</span><span
+lang=en-MW>: Styles elements based on their position in the document tree,
+where </span><span lang=en-MW style='font-size:10.0pt;line-height:125%;
+font-family:"Courier New"'>n</span><span lang=en-MW> is a formula or keyword.</span></p>
+
+</div>
+
+<span class=MsoIntenseEmphasis><span lang=en-MW style='font-size:10.5pt;
+line-height:125%;font-family:"Calibri",sans-serif'><br clear=all
+style='page-break-before:always'>
+</span></span>
+
+<div class=WordSection6>
+
+<p class=MsoNormal><span class=MsoIntenseEmphasis><span lang=en-MW>Combinators
+in CSS</span></span></p>
+
+<p class=MsoNormal><span lang=en-MW>Combinators are special characters used to
+specify relationships between selectors in CSS.</span></p>
+
+<p class=MsoNormal><span lang=en-MW><img width=591 height=202
+src="webnotes_files/image035.png"></span></p>
+
+<p class=MsoNormal><span lang=en-MW>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=en-MW>The following are a general descriptions of
+CSS combinators: </span></p>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+lang=en-MW style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><strong><span lang=en-MW style='font-family:"Calibri",sans-serif'>Descendant
+combinator</span></strong><span lang=en-MW>: Selects all elements that are
+descendants of a specified ancestor. Selects all elements that are descendants
+of a specified ancestor element, regardless of how deeply nested they are.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle><span lang=en-MW><img width=507 height=69
+src="webnotes_files/image036.png"></span><span lang=en-MW> </span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=en-MW style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><strong><span lang=en-MW style='font-family:"Calibri",sans-serif'>Child
+combinator</span></strong><span lang=en-MW>: Selects all direct children of the
+specified parent. It targets elements that are immediately nested within the
+parent, excluding any deeper descendants.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle><span lang=en-MW><img width=507 height=67
+src="webnotes_files/image037.png"></span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=en-MW style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><strong><span lang=en-MW style='font-family:"Calibri",sans-serif'>Adjacent
+sibling combinator</span></strong><span lang=en-MW>: Selects an element that is
+directly preceded by a sibling element. The following rule selects the </span><code><span
+lang=en-MW style='font-size:10.0pt;line-height:125%'>adjacent</span></code><span
+lang=en-MW> element that immediately follows </span><code><span lang=en-MW
+style='font-size:10.0pt;line-height:125%'>element</span></code><span
+lang=en-MW>.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle><span lang=en-MW><img width=507 height=66
+src="webnotes_files/image038.png"></span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=en-MW style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><strong><span lang=en-MW style='font-family:"Calibri",sans-serif'>General
+sibling combinator</span></strong><span lang=en-MW>: Selects all sibling
+elements that follow a specified element. It targets all elements that come
+after the specified element, not just the immediately following one unlike the <strong><span
+style='font-family:"Calibri",sans-serif'>Adjacent sibling combinator. </span></strong><strong><span
+style='font-family:"Calibri",sans-serif;font-weight:normal'>The following </span></strong>selects
+all </span><code><span lang=en-MW style='font-size:10.0pt;line-height:125%'>sibling</span></code><span
+lang=en-MW> elements that come after </span><code><span lang=en-MW
+style='font-size:10.0pt;line-height:125%'>element</span></code><span
+lang=en-MW> in the document structure.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle><span lang=en-MW><img width=506 height=72
+src="webnotes_files/image039.png"></span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=en-MW style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span lang=en-MW>Grouping combinator: </span></b><span
+lang=en-MW>In CSS, the grouping combinator allows you to apply the same set of
+styles to multiple selectors. It's denoted by a comma (</span><code><span
+lang=en-MW style='font-size:10.0pt;line-height:125%'>,</span></code><span
+lang=en-MW>), and it combines multiple selectors into a single rule set,
+allowing you to apply the same styles to all the selectors listed.</span></p>
+
+<p class=MsoListParagraphCxSpLast><span lang=en-MW><img width=507 height=73
+id="Picture 1" src="webnotes_files/image040.png"></span></p>
+
+<p class=MsoNormal><span class=MsoIntenseEmphasis><span lang=en-MW>DOM
+(Document Object Model) Traversal </span></span></p>
+
+<p class=MsoNormal><span lang=en-MW>The following concepts in the Document
+Object Model (DOM) are known as DOM Navigation or DOM Traversal. They refer to
+properties used to navigate through the structure of an HTML or XML document.</span></p>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+lang=en-MW style='font-size:10.0pt;line-height:125%;font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><strong><span
+lang=en-MW style='font-family:"Calibri",sans-serif'>Ancestor</span></strong><span
+lang=en-MW>: Ancestor elements are those that are higher up in the document
+tree relative to a specific element. They are the elements that contain the
+element in question. Analogously, you can think of them as grandparents,
+parents, or other ancestors in a family tree.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=en-MW style='font-size:10.0pt;line-height:125%;font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><strong><span
+lang=en-MW style='font-family:"Calibri",sans-serif'>Parent</span></strong><span
+lang=en-MW>: The parent element is the immediate container of a specific
+element. It's directly above the element in the document tree. This is similar
+to a parent in a family tree, who has children.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=en-MW style='font-size:10.0pt;line-height:125%;font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><strong><span
+lang=en-MW style='font-family:"Calibri",sans-serif'>Child</span></strong><span
+lang=en-MW>: A child element is directly contained within another element. It's
+immediately below the parent element in the document tree. Analogously,
+children in a family tree are offspring of their parents.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=en-MW style='font-size:10.0pt;line-height:125%;font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><strong><span
+lang=en-MW style='font-family:"Calibri",sans-serif'>Descendant</span></strong><span
+lang=en-MW>: A descendant element is any element that is contained within
+another element, regardless of its depth in the document tree. It includes
+children, grandchildren, and all subsequent generations. In a family tree
+analogy, descendants are all the offspring of an ancestor, no matter how many
+generations removed.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=en-MW style='font-size:10.0pt;line-height:125%;font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><strong><span
+lang=en-MW style='font-family:"Calibri",sans-serif'>Sibling</span></strong><span
+lang=en-MW>: Sibling elements are elements that share the same parent. They are
+on the same level in the document tree and are adjacent to each other.
+Analogously, siblings in a family tree share the same parents.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=en-MW style='font-size:10.0pt;line-height:125%;font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><strong><span
+lang=en-MW style='font-family:"Calibri",sans-serif'>The root node</span></strong><span
+lang=en-MW>: It represents the top-level container for all other nodes in the
+document. In an HTML document, the root node is the </span><code><span
+lang=en-MW style='font-size:10.0pt;line-height:125%'>&lt;html&gt;</span></code><span
+lang=en-MW> element.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle><span lang=en-MW>The root node is unique
+because it serves as the starting point from which all other nodes in the
+document are descended. It's the ancestor of all other nodes, but it doesn't
+have an ancestor itself. Analogously, this must be Adam.</span></p>
+
+<p class=MsoListParagraphCxSpLast><span lang=en-MW>&nbsp;</span></p>
+
+<p class=MsoNormal><span class=MsoIntenseEmphasis><span lang=en-MW>&nbsp;</span></span></p>
 
 </div>
 
